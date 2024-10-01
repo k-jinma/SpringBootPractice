@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<style>
+		h1{
+			color: red;
+			font-size: 20px;
+			background-color: aquamarine;
+		}
+	</style>
 </head>
 <body>
- Login Page
+ 	<h1>Login Page</h1>
+	<form action="/login" method="post">
+		<input type="text" name="user" placeholder="username">
+		<input type="password" name="pass" placeholder="password">
+		<input type="submit" value="Login">
+	</form>
 </body>
 </html>
