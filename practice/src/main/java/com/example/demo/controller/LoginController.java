@@ -1,6 +1,9 @@
 package com.example.demo.controller;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +29,9 @@ public class LoginController {
 		
 		model.addAttribute("name", username );
 		model.addAttribute("pass", password );
+		
+		List<String> productList = Arrays.asList("りんご", "みかん", "ぶどう");
+		model.addAttribute("list", productList);
 		
 		if(username.equals("admin") && password.equals("pass")) {
 			return "top";
